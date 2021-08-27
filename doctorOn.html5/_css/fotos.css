@@ -1,0 +1,123 @@
+@charset "UTF-8";
+/*Formatação da largura altura deslocamento das fotos*/
+ul#album-fotos {
+	width: 700px;
+	margin: 0 auto;
+	padding: 50px;
+	overflow: hidden;
+	list-style: none;
+}
+/*Formatação da opacidade das letras da fotos */
+ul#album-fotos li span {
+	opacity: 0;
+	color: #ffffff;
+	text-shadow: 1px 1px 1px #000000;
+	background-color: rgba(0,0,0,.3);
+	font-size: 9pt;
+	line-height: 370px;
+	padding: 5px;
+
+}
+/*kit para Ampliação de fotos */
+ul#album-fotos li:hover {
+	-webkit-transform: scale(1.5);
+	-webkit-transition: all.7s ease-in;
+}
+ul#album-fotos li:hover span {
+	opacity: 1;
+}
+/*Formatação da borda da box das fotos */
+ul#album-fotos li {
+	float: left;
+	width: 200px;
+	height: 200px;
+	margin: 10px;
+	border: 5px solid #ffffff;
+	background-color: #ffffff;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.4)
+	
+}
+
+
+/*formatação para aparecer a fotos na pagina e 
+formatação de efeito de zooo na foto*/
+ul#album-fotos li#foto01 {
+	background: url('../_imagens/_fotos-saude/saude1.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px. 400px;
+	background-color: #ffffff;
+}
+/*Efeito de zooom das fotos*/
+ul#album-fotos li#foto01:hover {
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+ul#album-fotos li#foto02 {
+	background: url('../_imagens/_fotos-saude/saude2.png') no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px. 400px;
+	background-color: #ffffff;
+}
+/*Efeito de zoom das fotos */
+ul#album-fotos li#foto02:hover {
+	background-position: 0px 0px;
+	background-size: 200px 200px;}
+
+ul#album-fotos li#foto03 {
+	background: url('../_imagens/_fotos-saude/saude3.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px. 400px;
+	background-color: #ffffff;
+}
+/*Efeito de zoom das fotos */
+ul#album-fotos li#foto03:hover {
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+ul#album-fotos li#foto04 {
+	background: url('../_imagens/_fotos-saude/saude4.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px. 400px;
+	background-color: #ffffff;	
+}
+/*Efeito de zoom das fotos */
+ul#album-fotos li#foto04:hover {
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+ul#album-fotos li#foto05 {
+	background: url('../_imagens/_fotos-saude/saude5.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px. 400px;
+	background-color: #ffffff;
+}
+/*Efeito de zoom das fotos */
+ul#album-fotos li#foto05:hover {
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+ul#album-fotos li#foto06 {
+	background: url('../_imagens/_fotos-saude/saude6.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px. 400px;
+	background-color: #ffffff;
+}	
+/*Efeito de zoom das fotos */
+ul#album-fotos li#foto06:hover {
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+h4{
+	font-family:  'Fontelogo', sans-serif;
+	font-size: 30pt;
+	color: #606060;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+	padding: 0px;
+	margin-bottom: 0px;
+	text-align: center;
+}
+h5 {
+	font-family: 'Fontelogo';
+	font-size: 12pt;
+	text-align: center;
+}

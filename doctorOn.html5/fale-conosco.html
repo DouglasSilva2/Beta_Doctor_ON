@@ -1,0 +1,134 @@
+
+<! DOCTYPE html>
+<html lang="pt-br"/>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Fale conosco</title>
+        <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+        <link rel="stylesheet" type="text/css" href="_css/form.css">
+    </head>
+    1
+ <!--   Função JavaScript para mudança de Fotos nos icones dos botões dos menus      --> 
+    <script lang="javascript" src="_javascript/funcoes.js"></script>
+    <script>
+            function calc_total() {
+                var qtd = parseInt(document.getElementById('cQtd').value);
+                tot = qtd * 1500;
+                document.getElementById('cTot').value =tot;
+            }       
+    </script>
+<body>
+<div id="interface">
+
+    <header id="cabecalho">
+        <hgroup>
+            <h1>Doctor.On</h1>
+            <h2>Fale conosco</h2>
+        </hgroup>
+
+1
+ <!--     botões dos menus, likns de direcionamentos para index especificos  --> 
+        <img id="icone" src="_imagens/_doctor/contato.png">
+
+<nav id="menu">
+    <h1>Menu Principal</h1>
+        <ul type="disc">
+        
+<li onmouseover="mudaFoto('_imagens/_doctor/icone-inicial.png')" onmouseout="mudaFoto('_imagens/_doctor/contato.png')"><a href="index.html">Pagina Inicial</a></li>
+
+    <li onmouseover="mudaFoto('_imagens/_doctor/cadastros.png')" onmouseout="mudaFoto('_imagens/_doctor/contato.png')"><a href="cadastro.html">Cadastro</a></li>
+
+<li onmouseover="mudaFoto('_imagens/_doctor/agendas-forme.png')" onmouseout="mudaFoto('_imagens/_doctor/contato.png')"><a href="agendamento.php"> Agendamentos</a></li>
+
+<li onmouseover="mudaFoto('_imagens/_doctor/fotos.png')" onmouseout="mudaFoto('_imagens/_doctor/contato.png')"><a href="fotos.html">Fotos de Projetos</a></li>
+
+<li onmouseover="mudaFoto('_imagens/_doctor/eventos.png')" onmouseout="mudaFoto('_imagens/_doctor/contato.png')"><a href="eventos.html">Eventos na Area da Saúde</a></li>
+
+<li onmouseover="mudaFoto('_imagens/_doctor/contato.png')" onmouseout="mudaFoto('_imagens/_doctor/contato.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+    </ul>
+
+</nav>      
+1
+
+</header>
+ <!--   Fim   --> 
+  <!--   seção do corpo da pagina  do site  --> 
+    <section id="corpo-full">
+
+
+    <article id="noticias-principal">
+        <header id="cabecalho-artigo">
+                    <hgroup>
+                       
+                        <h6>Formulário de Contato</h6>
+                        <h2>Por Doctor.On</h2>
+                        <h3 class="direita"> Atualizado em 09/04/2017</h3>
+                    </hgroup>
+        </header>
+
+<form method="post" id="fContato" action="mailto:Doctoron@gmail.com" oninput="calc_total();">
+
+    <fieldset id="usuario">
+                <legend >Identificação do Usuário</legend>
+                    <p><label for="cNome">Nome<label><input type="text" name="-Nome" id="cNome" size="20" maxlength="30" placeholder="Nome completo"/></p>
+                    <p><label for="cSenha">Senha</label><input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="Senha"></p>
+                    <p> <label for="cEmail">E-mail</label><input type="e-mail" name="tEmail" id="cEmail" size=" 30" maxlength="30" placeholder="E-mail"></p>
+                    <fieldset id="sexo">
+                            <legend>Sexo</legend>
+                            <input type="radio" name="tSexo" id="cMas"><label for="cMas">Masculino</label><br>
+                            <input type="radio" name="tSexo" id="cFem"><label for="cFem">Feminino</label>
+                    </fieldset>
+
+                        <p>Data de Nascimento<input type="date" name="tNasc" id="cNasc"></p>
+                     
+        </fieldset>
+        <fieldset id="endereco">
+                    <legend>Endereço do Usuário</legend>
+                    <p><label for="cRua">Logradouro:</label><input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Raua,av..."></p>
+                        <p><label for="cNum">Número:</label><input type="number" name="tNum" id="cNum" min="0" max="9999" placeholder="Número"></p>
+                         <p><label for="cEst">Estado:</label>
+                        <select name="tEst" id="cEst">
+
+                    <optgroup label="Região sudeste">
+                        <option value="Rj">Rio de Janeiro</option>
+                        <option value="SP">Lorena</option>
+                        <option value="MG">Minas Gerais</option>
+                    </optgroup>
+                    <optgroup label="Região Sul">
+                        <option value="PR">Paraná</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SR">Rio Grande Do Sul</option>
+                    </optgroup>
+                        </select></p>
+
+                <p><label for="cCid">Cidade:</label>
+                        <input type="text" name="cCid" maxlength="40" size="20" placeholder="Sua Cidade" list="cidades"></p>
+                        <datalist id="cidades">
+                            <option value="Rio de Janeiro"></option>
+                            <option value="Nova Iguaçu"></option>
+                            <option value="Niteroi"></option>
+
+                        </datalist>
+        </fieldset>
+        <fieldset id="mensagem">                
+                   <legend>Reclamações</legend>
+                        <p><label for="cUrg">Grau de Urgência:,</label>
+                        Min<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2">Máx</p>
+                        <p><label for="cMsg">Mensagem:</label>
+                        <textarea name="tMsg" id="cMsg" cols="20" rows="5" placeholder="Deixe aqui sua mensagem"></textarea></p>
+
+        </fieldset>
+        
+                    <p><input type="submit" value="Enviar"></p>
+                    
+</form>
+<footer id="rodape"/>
+
+    <p>Copyright &copy; 2017 - by Douglas T.S, Sabrinna.V,Paulo Rocha <br/>
+<a href="http://Facebook.com/Omundodosnerds" target="_blank">Facebook</a> 
+<a href="http://Twitter.com/Omundodosnerds" target="_blank">Twitter</a></p>
+
+</footer>
+</div>
+</body>
+</html>

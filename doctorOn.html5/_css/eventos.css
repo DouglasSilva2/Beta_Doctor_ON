@@ -1,0 +1,42 @@
+section#cp {
+	display: block;
+	width: 580px;
+	float: left;
+	border-right: 1px solid #606060;
+	padding-right: 15px;
+}
+
+aside#lt h1{
+	font-family: 'Fontelogo', sans-serif;
+	font-family: 20pt;
+	color: #606060;
+	margin-top: 0px;
+}
+aside#lt h2 {
+	background-color: #606060;
+	font-size: 13pt;
+	color: #ffffff;
+	padding: 5px;
+}
+
+aside#lt {
+	display: block;
+	width:  480px;
+	float: right;
+	background-color:#dddddd;
+	padding: 10px;
+	margin-top: 10px;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+}
+/*Formatação do Roda-pé do pagina */
+footer#rp {
+	clear: both;
+	border-top: 1px solid #606060;
+}
+footer#rp p {
+	text-align: center;
+}
+h2.titulo {
+	text-align: center;
+	font-family: 'Fontelogo'
+}

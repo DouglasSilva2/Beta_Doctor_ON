@@ -1,0 +1,37 @@
+h4 {
+	font-family:  'Fontelogo', sans-serif;
+	font-size: 30pt;
+	color: #606060;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+	padding: 0px;
+	margin-bottom: 0px;
+	text-align: center;
+}
+
+/*Formatação da foto*/
+figure.foto-leg {
+	position: relative;
+	border: 8px solid white;
+	box-shadow: 1px 1px 4px black;
+}
+figure.foto-leg img {
+	width: 100%;
+	height:50%;
+}
+figure.foto-leg figcaption#fot {
+	opacity: 0;
+	position: absolute;
+	top: 0px;
+	background-color: rgba(0,0,0,.4);
+	color: white;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	transition: opacity 1s;
+}
+figure.foto-leg:hover figcaption#fot {
+	opacity: 1;
+}
+/*Fim da formatação da foto*/
+
